@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJR</title>
+    <link rel="icon" type="image/x-icon" href="././assets/logo.png" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Monoton&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ajrblu: "#23416D",
+            },
+            fontFamily: {
+              sans: ["Graphik", "sans-serif"],
+              serif: ["Merriweather", "serif"],
+              anton: ['"anton"', "sans - serif"],
+              roboto: ["roboto", "sans-serif"],
+              helvetica: ["helvetica", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  </head>
+  <body class="bg-fixed md:bg-cover lg:bg-cover sm:bg-contain">
+    <div class="bg-gradient-to-r from-cyan-500 via-blue-500 to-cyan-500">
+      <div class="nav-mob sm:hidden md:visible lg:visible w-screen top-0">
+        <nav
+          class="bg-white top-nav flex justify-between p-4 bg-gradient-to-r from-cyan-500 via-blue-500 to-cyan-500"
+        >
+          <div class="noend flex justify-start">
+            <div class="hamburg flex relative">
+              <div class="flex self-center justify-self-end">
+                <a href="./index.html"
+                  ><img class="w-3/12" src="./assets/logo.png" alt=""
+                /></a>
+              </div>
+              <label
+                id="hamburger-icon"
+                class="text-white flex justify-start text-2xl absolute top-0 right-0"
+                for="menu-toggle"
+                >&#9776;</label
+              >
+              <nav>
+                <input type="checkbox" id="menu-toggle" />
+                <ul
+                  id="menu"
+                  class="mob-dropdown text-white px-8 py-7 font-medium font-roboto"
+                >
+                  <a href="./index.html"><li>HOME</li></a>
+                  <a href="./tour.html"><li>TOUR</li></a>
+                  <a href="./about.html"><li class="active">ABOUT</li></a>
+
+                  <a href="./videos.html"><li>VIDEOS</li></a>
+                  <a href="./albums.html"><li>TRACKS</li></a>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- nav dsk -->
+      <div
+        class="nav-dsk w-screen pb-4 bg-gradient-to-r from-cyan-500 via-blue-500 to-cyan-500"
+      >
+        <nav class="bottom-nav">
+          <div class="max-w-screen-xl px-4 py-3 mx-auto md:px-6">
+            <div class="flex justify-between">
+              <ul class="flex">
+                <a href="./index.html"
+                  ><li><img class="w-24" src="./assets/logo.png" alt="" /></li
+                ></a>
+              </ul>
+
+              <ul
+                class="flex mt-0 space-x-10 text-4xl font-medium items-center font-roboto text-white"
+              >
+                <a href="./index.html"><li>HOME</li></a>
+                <a href="./tour.html"><li>TOUR</li></a>
+                <a href="./about.html"><li>ABOUT</li></a>
+                <a href="./videos.html"><li>VIDEOS</li></a>
+                <a href="./albums.html"><li>TRACKS</li></a>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="dj justify-center">
+      <div
+        class="flex justify-center text-blue-500 lg:text-5xl md:text-5xl text-2xl leading-tight font-semibold m-10 font-anton"
+      >
+        <h1>CHECK OUT OUR NEWEST SINGLE</h1>
+      </div>
+      <div class="album md:flex lg:flex text-blu md:flex md:justify-around">
+        <div class="alb-cover md:w-5/12 lg:w-5/12 sm:w-8/12 m-10">
+          <img
+            src="./assets/dj-alb-cover.jpg"
+            alt="dj-is-crying-for-help-cover"
+          />
+        </div>
+
+        <div class="stream md:w-4/12 text-blu">
+          <div
+            class="words flex justify-center text-blue-500 lg:text-3xl md:text-3xl text-2xl leading-tight font-semibold m-5 font-anton"
+          >
+            STREAM ON THESE PLATFORMS
+          </div>
+          <div class="logos">
+            <div
+              class="md:grid md:grid-rows-2 md:grid-flow-col md:gap-4 md:w-full flex gap-2 justify-center md:justify-center"
+            >
+              <div>
+                <a
+                  href="https://music.youtube.com/channel/UChPyJft6cxsuQeo9yzQ4PQQ"
+                >
+                  <img
+                    class="w-full"
+                    src="./assets/youtue-music.png"
+                    alt="youtube-music"
+                /></a>
+              </div>
+              <div>
+                <a
+                  href="  https://open.spotify.com/artist/6s22t5Y3prQHyaHWUN1R1C "
+                >
+                  <img class="w-full" src="./assets/spotify.png" alt="spotify"
+                /></a>
+              </div>
+              <div>
+                <a href=" https://music.amazon.com/artists/B003AP82JS/ajr">
+                  <img
+                    class="w-full"
+                    src="./assets/amazon-music.png"
+                    alt="amazon-music"
+                /></a>
+              </div>
+              <a href="https://music.apple.com/us/artist/ajr/359553651">
+                <img
+                  class="w-full"
+                  src="./assets/apple-music.png"
+                  alt="apple-music"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="words flex justify-center text-blue-500 lg:text-7xl md:text-7xl text-2xl leading-tight font-semibold m-5 font-anton"
+      >
+        AJR NEWS
+      </div>
+
+      <div class="flex justify-center m-10" id="signs">
+        <div class="block p-2 rounded-lg shadow-lg bg-white w-screen">
+          <div
+            class="grid md:grid-cols-3 sm:grid-cols-1 signs mx-10 text-center"
+          >
+            <div class="card-txt">
+              <div class="title-card">
+                <h2
+                  class="text-blue-500 lg:text-2xl md:text-2xl text-l leading-tight font-semibold mb-2 font-roboto"
+                >
+                  AJR Pop Band Cancel Russia Tour Dates Over Ukraine Attack
+                </h2>
+              </div>
+
+              <a href="https://www.ticketmaster.com/event/0E005D3600789535">
+                <button
+                  class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white p-1 border border-blue-500 hover:border-transparent rounded font-helvetica"
+                >
+                  read more
+                </button></a
+              >
+            </div>
+            <div class="card-txt">
+              <div class="title-card">
+                <h2
+                  class="text-blue-500 lg:text-2xl md:text-2xl text-l leading-tight font-semibold mb-2 font-roboto"
+                >
+                  More General AJR News
+                </h2>
+              </div>
+
+              <a href=" https://www.iheart.com/artist/ajr-594322/news/">
+                <button
+                  class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white p-1 border border-blue-500 hover:border-transparent rounded font-helvetica"
+                >
+                  read more
+                </button></a
+              >
+            </div>
+            <div class="card-txt">
+              <div class="title-card">
+                <h2
+                  class="text-blue-500 lg:text-2xl md:text-2xl text-l leading-tight font-semibold mb-2 font-roboto"
+                >
+                  AJR confirms they're working on their fifth album
+                </h2>
+              </div>
+
+              <a
+                href=" https://www.movin925.com/ajr-confirms-theyre-working-on-their-fifth-album/"
+              >
+                <button
+                  class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white p-1 border border-blue-500 hover:border-transparent rounded font-helvetica"
+                >
+                  read more
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div
+          class="words flex justify-center text-blue-500 lg:text-7xl md:text-7xl text-2xl leading-tight font-semibold m-5 font-anton"
+        >
+          CHECK OUT OUR SOCIALS
+        </div>
+        <div class="flex gap-2 justify-center md:justify-center">
+          <div class="w-2/12">
+            <a href="https://www.instagram.com/ajrbrothers/?hl=en"
+              ><img src="./assets/insta.png" alt="insta"
+            /></a>
+          </div>
+          <div class="w-2/12">
+            <a href="https://www.facebook.com/AJRBrothers/"
+              ><img src="./assets/facebook.png" alt="facebook"
+            /></a>
+          </div>
+          <div class="w-2/12">
+            <a href="https://twitter.com/AJRBrothers"
+              ><img src="./assets/twt.png" alt="twitter"
+            /></a>
+          </div>
+          <div class="w-2/12">
+            <a href="https://www.tiktok.com/@ajrbrothers"
+              ><img src="./assets/tiktok.png" alt="tiktok"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="p-10"></div>
+  </body>
+</html>

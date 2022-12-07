@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJR</title>
+    <link rel="icon" type="image/x-icon" href="././assets/logo.png" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Monoton&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ajrblu: "#23416D",
+            },
+            fontFamily: {
+              sans: ["Graphik", "sans-serif"],
+              serif: ["Merriweather", "serif"],
+              anton: ['"anton"', "sans - serif"],
+              roboto: ["roboto", "sans-serif"],
+              helvetica: ["Helvetica", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  </head>
+  <body class="bg-fixed md:bg-cover lg:bg-cover sm:bg-contain">
+    <div class="bg-gradient-to-r from-cyan-500 via-blue-500 to-cyan-500">
+      <div class="nav-mob sm:hidden md:visible lg:visible w-screen top-0">
+        <nav
+          class="bg-white top-nav flex justify-between p-4 bg-gradient-to-r from-cyan-500 via-blue-500 to-cyan-500"
+        >
+          <div class="noend flex justify-start">
+            <div class="hamburg flex relative">
+              <div class="flex self-center justify-self-end">
+                <a href="./index.html"
+                  ><img class="w-3/12" src="./assets/logo.png" alt=""
+                /></a>
+              </div>
+              <label
+                id="hamburger-icon"
+                class="text-white flex justify-start text-2xl absolute top-0 right-0"
+                for="menu-toggle"
+                >&#9776;</label
+              >
+              <nav>
+                <input type="checkbox" id="menu-toggle" />
+                <ul
+                  id="menu"
+                  class="mob-dropdown text-white px-8 py-7 font-medium font-roboto"
+                >
+                  <a href="./index.html"><li>HOME</li></a>
+                  <a href="./tour.html"><li>TOUR</li></a>
+                  <a href="./about.html"><li class="active">ABOUT</li></a>
+
+                  <a href="./videos.html"><li>VIDEOS</li></a>
+                  <a href="./albums.html"><li>TRACKS</li></a>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- nav dsk -->
+      <div
+        class="nav-dsk w-screen pb-4 bg-gradient-to-r from-cyan-500 via-blue-500 to-cyan-500"
+      >
+        <nav class="bottom-nav">
+          <div class="max-w-screen-xl px-4 py-3 mx-auto md:px-6">
+            <div class="flex justify-between">
+              <ul class="flex">
+                <a href="./index.html"
+                  ><li><img class="w-24" src="./assets/logo.png" alt="" /></li
+                ></a>
+              </ul>
+
+              <ul
+                class="flex mt-0 space-x-10 text-4xl font-medium items-center font-roboto text-white"
+              >
+                <a href="./index.html"><li>HOME</li></a>
+                <a href="./tour.html"><li>TOUR</li></a>
+                <a href="./about.html"><li>ABOUT</li></a>
+                <a href="./videos.html"><li>VIDEOS</li></a>
+                <a href="./albums.html"><li>TRACKS</li></a>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="d">
+      <div class="flex justify-center m-10" id="signs">
+        <div class="block p-6 rounded-lg shadow-lg bg-white w-screen">
+          <div class="grid md:grid-cols-2 sm:grid-cols-1 signs mx-10">
+            <div class="card-txt">
+              <div class="title-card">
+                <h5
+                  class="text-blue-500 lg:text-5xl md:text-5xl text-2xl leading-tight font-semibold mb-2 font-roboto"
+                >
+                  Channel 95.5's Jingle Ball
+                </h5>
+                <h2
+                  class="text-blue-500 lg:text-3xl md:text-3xl text-l leading-tight font-semibold mb-2 font-roboto"
+                >
+                  Presented By Capital One
+                </h2>
+              </div>
+              <h3
+                class="text-slate-700 font-helvetica text-xl leading-tight font-medium mb-2"
+              >
+                Tuesday • December 06 2022 • 7:30 PM
+                <br />
+                Little Caesars Arena, Detroit, MI
+              </h3>
+            </div>
+            <div class="flex justify-center">
+              <a
+                href="https://www.ticketmaster.com/event/08005D339EC01DA6
+              "
+              >
+                <button
+                  class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-5 px-5 border border-blue-500 hover:border-transparent rounded font-helvetica"
+                >
+                  Buy Tickets Here!
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center m-10" id="signs">
+        <div class="block p-6 rounded-lg shadow-lg bg-white w-screen">
+          <div class="grid md:grid-cols-2 sm:grid-cols-1 signs mx-10">
+            <div class="card-txt">
+              <div class="title-card">
+                <h5
+                  class="text-blue-500 lg:text-5xl md:text-5xl text-2xl leading-tight font-semibold mb-2 font-roboto"
+                >
+                  Q102's Jingle Ball
+                </h5>
+                <h2
+                  class="text-blue-500 lg:text-3xl md:text-3xl text-l leading-tight font-semibold mb-2 font-roboto"
+                >
+                  Presented By Capital One
+                </h2>
+              </div>
+              <h3
+                class="text-slate-700 font-helvetica text-xl leading-tight font-medium mb-2"
+              >
+                Monday • December 12 2022 • 7:30 PM
+
+                <br />
+
+                Wells Fargo Center, Philadelphia, PA
+              </h3>
+            </div>
+            <div class="flex justify-center">
+              <a
+                href="https://wellsfargocenter.evenue.net/cgi-bin/ncommerce3/SEGetEventInfo?ticketCode=GS%3AWACH%3AWA2022%3AJB1212%3A&linkID=global-wachovia&shopperContext=&pc=&caller=&appCode=&groupCode=JINGLE22&cgc=&dataAccId=615&locale=en_US&siteId=ev_global-wachovia"
+              >
+                <button
+                  class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-5 px-5 border border-blue-500 hover:border-transparent rounded font-helvetica"
+                >
+                  Buy Tickets Here!
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center m-10" id="signs">
+        <div class="block p-6 rounded-lg shadow-lg bg-white w-screen">
+          <div class="grid md:grid-cols-2 sm:grid-cols-1 signs mx-10">
+            <div class="card-txt">
+              <div class="title-card">
+                <h5
+                  class="text-blue-500 lg:text-5xl md:text-5xl text-2xl leading-tight font-semibold mb-2 font-roboto"
+                >
+                  Power 96.1s Jingle Ball Q102's Jingle Ball
+                </h5>
+                <h2
+                  class="text-blue-500 lg:text-3xl md:text-3xl text-l leading-tight font-semibold mb-2 font-roboto"
+                >
+                  Presented By Capital One
+                </h2>
+              </div>
+              <h3
+                class="text-slate-700 font-helvetica text-xl leading-tight font-medium mb-2"
+              >
+                Thursday • December 15 2022 • 7:30 PM
+
+                <br />
+
+                State Farm Arena, Atlanta, GA
+              </h3>
+            </div>
+            <div class="flex justify-center">
+              <a href="https://www.ticketmaster.com/event/0E005D3600789535">
+                <button
+                  class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-5 px-5 border border-blue-500 hover:border-transparent rounded font-helvetica"
+                >
+                  Buy Tickets Here!
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="p-10"></div>
+  </body>
+</html>

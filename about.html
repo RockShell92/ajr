@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJR</title>
+    <link rel="icon" type="image/x-icon" href="././assets/logo.png" />
+
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Monoton&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ajrblu: "#23416D",
+            },
+            fontFamily: {
+              sans: ["Graphik", "sans-serif"],
+              serif: ["Merriweather", "serif"],
+              anton: ['"anton"', "sans - serif"],
+              roboto: ['"roboto"', "sans-serif"],
+              helvetica: ["Helvetica", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  </head>
+  <body class="bg-fixed md:bg-cover lg:bg-cover sm:bg-contain">
+    <div class="bg-gradient-to-r from-cyan-500 via-blue-500 to-cyan-500">
+      <div class="nav-mob sm:hidden md:visible lg:visible w-screen top-0">
+        <nav
+          class="bg-white top-nav flex justify-between p-4 bg-gradient-to-r from-cyan-500 via-blue-500 to-cyan-500"
+        >
+          <div class="noend flex justify-start">
+            <div class="hamburg flex relative">
+              <div class="flex self-center justify-self-end">
+                <a href="./index.html"
+                  ><img class="w-3/12" src="./assets/logo.png" alt=""
+                /></a>
+              </div>
+              <label
+                id="hamburger-icon"
+                class="text-white flex justify-start text-2xl absolute top-0 right-0"
+                for="menu-toggle"
+                >&#9776;</label
+              >
+              <nav>
+                <input type="checkbox" id="menu-toggle" />
+                <ul
+                  id="menu"
+                  class="mob-dropdown text-white px-8 py-7 font-medium font-roboto"
+                >
+                  <a href="./index.html"><li>HOME</li></a>
+                  <a href="./tour.html"><li>TOUR</li></a>
+                  <a href="./about.html"><li class="active">ABOUT</li></a>
+
+                  <a href="./videos.html"><li>VIDEOS</li></a>
+                  <a href="./albums.html"><li>TRACKS</li></a>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- nav dsk -->
+      <div
+        class="nav-dsk w-screen pb-4 bg-gradient-to-r from-cyan-500 via-blue-500 to-cyan-500"
+      >
+        <nav class="bottom-nav">
+          <div class="max-w-screen-xl px-4 py-3 mx-auto md:px-6">
+            <div class="flex justify-between">
+              <ul class="flex">
+                <a href="./index.html"
+                  ><li><img class="w-24" src="./assets/logo.png" alt="" /></li
+                ></a>
+              </ul>
+
+              <ul
+                class="flex mt-0 space-x-10 text-4xl font-medium items-center font-roboto text-white"
+              >
+                <a href="./index.html"><li>HOME</li></a>
+                <a href="./tour.html"><li>TOUR</li></a>
+                <a href="./about.html"><li>ABOUT</li></a>
+                <a href="./videos.html"><li>VIDEOS</li></a>
+                <a href="./albums.html"><li>TRACKS</li></a>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="md:mx-20">
+      <div
+        class="flex justify-center m-10 font-anton text-7xl text-center text-blue-500"
+      >
+        HOW WE STARTED
+      </div>
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 m-10 p-0 flex justify-center"
+      >
+        <div class="words text-xl font-helvetica text-left md:mr-5 m-0">
+          <p>
+            AJR is an American indie pop trio composed of multi-instrumentalist
+            brothers Jack, Adam, and Ryan Met.
+            <br />
+            <br />
+            The band writes, produces, and mixes their music in the living room
+            of their apartment in New York City. Their musical style has been
+            described as “eclectic”, combining elements of pop, electronic, and
+            dubstep.
+            <br /><br />
+            The band started in 2005, and since then it has gained a large
+            following and produced lots of music. Currently, they have released
+            four studio albums, with a fifth in active development, as well as 7
+            EPs and dozens of singles. They are known for their unique and
+            eclectic style of music, which often includes elements of pop,
+            electronic and dubstep.
+            <br /><br />
+            The Met brothers initially began writing, producing, and mixing
+            their own material in the living room of their Chelsea apartment in
+            Manhattan, New York, focusing on DIY indie pop music. They began
+            performing around 2006, busking in Central Park and Washington
+            Square Park. Initially, Jack played the harmonica, Ryan played the
+            piano, and Adam played the bass. They later began playing various
+            instruments. They began by performing covers, and have also put out
+            2 albums in 2010 and an EP in 2012.
+          </p>
+        </div>
+        <div class="flex justify-center aspect-auto">
+          <img
+            class="rounded-md w-full"
+            src="./assets/stairs.jpg"
+            alt="on-stairs"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="meet mt-10">
+      <div
+        class="flex justify-center font-anton text-7xl text-center text-blue-500"
+      >
+        MEET THE BAND
+      </div>
+      <div class="dolls md:mx-20">
+        <div class="adam font-helvetica my-10">
+          <div class="grid grid-cols-12 m-10">
+            <div class="photo md:col-span-4 col-span-12">
+              <img class="rounded-md" src="./assets/adam-doll.jpeg" alt="" />
+            </div>
+            <div class="col-span-1"></div>
+            <div class="words md:col-span-7 col-span-12">
+              <div class="top-row md:flex gap-5 align-center">
+                <div
+                  class="text-[#55686E] name text-7xl self-center font-semibold text-center"
+                >
+                  ADAM
+                </div>
+                <div class="flex gap-2 justify-center md:justify-start">
+                  <div class="w-2/12">
+                    <a href="https://www.instagram.com/adamajrbrothers/?hl=en"
+                      ><img src="./assets/insta.png" alt="insta"
+                    /></a>
+                  </div>
+                  <div class="w-2/12">
+                    <a href="https://www.facebook.com/adambmet"
+                      ><img src="./assets/facebook.png" alt="facebook"
+                    /></a>
+                  </div>
+                  <div class="w-2/12">
+                    <a href="https://twitter.com/AdamAJRbrothers"
+                      ><img src="./assets/twt.png" alt="twitter"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="md:mt-10 md:text-3xl text-l">
+                <p>
+                  Dr. Adam Brett Met is a musician and activist. He is the
+                  oldest of the AJR brothers and is currently 32 years old. He
+                  plays bass guitar and percussion. He also provides vocals,
+                  programming, and samples. Adam graduated from Columbia
+                  University in 2012 and has since earned his master's degree
+                  and a PhD in international human rights law.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="jack font-helvetica my-10 hidden md:block">
+          <div class="grid grid-cols-12 m-10">
+            <div class="words md:col-span-7 col-span-12">
+              <div class="top-row md:flex gap-5 md:align-center md:justify-end">
+                <div class="flex gap-2 justify-center md:justify-end">
+                  <div class="w-2/12">
+                    <a
+                      href="  https://www.instagram.com/jackajrbrothers/?hl=en "
+                      ><img src="./assets/insta.png" alt="insta"
+                    /></a>
+                  </div>
+                  <div class="w-2/12">
+                    <a href="https://www.facebook.com/jack.met.9"
+                      ><img src="./assets/facebook.png" alt="facebook"
+                    /></a>
+                  </div>
+                  <div class="w-2/12">
+                    <a href="https://twitter.com/JackAJRbrothers"
+                      ><img src="./assets/twt.png" alt="twitter"
+                    /></a>
+                  </div>
+                </div>
+                <div
+                  class="name text-7xl text-[#935677] self-center font-semibold"
+                >
+                  JACK
+                </div>
+              </div>
+              <div class="mt-10 md:md:text-3xl text-l text-l text-right">
+                <p>
+                  Jack Evan Met is the youngest of the AJR brothers. He sings
+                  lead vocals, and plays guitar, melodica, ukulele, banjo, bass
+                  guitar, trumpet, drums, and various other percussion
+                  instruments, as well as providing samples. Jack was still in
+                  high school when they released their first EP, I'm Ready, and
+                  was 12 when they first started recording songs.
+                </p>
+              </div>
+            </div>
+            <div class="col-span-1"></div>
+            <div class="photo md:col-span-4 col-span-12">
+              <img class="rounded-md" src="./assets/jack-doll.jpeg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="jack font-helvetica my-10 block md:hidden">
+          <div class="grid grid-cols-12 m-10">
+            <div class="photo md:col-span-4 col-span-12">
+              <img class="rounded-md" src="./assets/jack-doll.jpeg" alt="" />
+            </div>
+            <div class="col-span-1"></div>
+            <div class="words md:col-span-7 col-span-12">
+              <div class="top-row md:flex gap-5 align-center">
+                <div
+                  class="text-[#55686E] name text-7xl self-center font-semibold text-center"
+                >
+                  JACK
+                </div>
+                <div class="flex gap-2 justify-center md:justify-start">
+                  <div class="w-2/12">
+                    <a
+                      href="  https://www.instagram.com/jackajrbrothers/?hl=en "
+                      ><img src="./assets/insta.png" alt="insta"
+                    /></a>
+                  </div>
+                  <div class="w-2/12">
+                    <a href="https://www.facebook.com/jack.met.9"
+                      ><img src="./assets/facebook.png" alt="facebook"
+                    /></a>
+                  </div>
+                  <div class="w-2/12">
+                    <a href="https://twitter.com/JackAJRbrothers"
+                      ><img src="./assets/twt.png" alt="twitter"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="md:mt-10 md:text-3xl text-l">
+                <p>
+                  Jack Evan Met is the youngest of the AJR brothers. He sings
+                  lead vocals, and plays guitar, melodica, ukulele, banjo, bass
+                  guitar, trumpet, drums, and various other percussion
+                  instruments, as well as providing samples. Jack was still in
+                  high school when they released their first EP, I'm Ready, and
+                  was 12 when they first started recording songs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ryan my-10">
+          <div class="grid grid-cols-12 m-10">
+            <div class="photo md:col-span-4 col-span-12">
+              <img class="rounded-md" src="./assets/ryan-doll.jpeg" alt="" />
+            </div>
+            <div class="col-span-1"></div>
+            <div class="words md:col-span-7 col-span-12">
+              <div class="top-row md:flex gap-5">
+                <div
+                  class="name text-7xl self-center text-[#6D7B93] font-semibold text-center"
+                >
+                  RYAN
+                </div>
+                <div class="flex gap-2 justify-center md:justify-start">
+                  <div class="w-2/12">
+                    <a href="https://www.instagram.com/ryanajrbrothers/?hl=en"
+                      ><img src="./assets/insta.png" alt="insta"
+                    /></a>
+                  </div>
+                  <div class="w-2/12">
+                    <a href="https://www.facebook.com/ryan.met.1"
+                      ><img src="./assets/facebook.png" alt="facebook"
+                    /></a>
+                  </div>
+                  <div class="w-2/12">
+                    <a href="https://twitter.com/ryanajrbrothers"
+                      ><img src="./assets/twt.png" alt="twitter"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="md:text-3xl text-l">
+                <p>
+                  Ryan Joshua Met is the second-oldest of the AJR brothers. Ryan
+                  plays ukulele, keyboards, synthesizers, trumpet, drums, and
+                  percussion, as well as providing vocals, samples, and
+                  programming. He is also the main producer of most of their
+                  songs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="p-10"></div>
+  </body>
+</html>

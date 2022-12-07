@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJR</title>
+    <link rel="icon" type="image/x-icon" href="././assets/logo.png" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Monoton&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ajrblu: "#23416D",
+            },
+            fontFamily: {
+              sans: ["Graphik", "sans-serif"],
+              serif: ["Merriweather", "serif"],
+              anton: ['"anton"', "sans - serif"],
+              roboto: ["roboto", "sans-serif"],
+              helvetica: ["Helvetica", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  </head>
+  <body class="bg-fixed md:bg-cover lg:bg-cover sm:bg-contain">
+    <div class="bg-gradient-to-r from-cyan-500 via-blue-500 to-cyan-500">
+      <div class="nav-mob sm:hidden md:visible lg:visible w-screen top-0">
+        <nav
+          class="bg-white top-nav flex justify-between p-4 bg-gradient-to-r from-cyan-500 via-blue-500 to-cyan-500"
+        >
+          <div class="noend flex justify-start">
+            <div class="hamburg flex relative">
+              <div class="flex self-center justify-self-end">
+                <a href="./index.html"
+                  ><img class="w-3/12" src="./assets/logo.png" alt=""
+                /></a>
+              </div>
+              <label
+                id="hamburger-icon"
+                class="text-white flex justify-start text-2xl absolute top-0 right-0"
+                for="menu-toggle"
+                >&#9776;</label
+              >
+              <nav>
+                <input type="checkbox" id="menu-toggle" />
+                <ul
+                  id="menu"
+                  class="mob-dropdown text-white px-8 py-7 font-medium font-roboto"
+                >
+                  <a href="./index.html"><li>HOME</li></a>
+                  <a href="./tour.html"><li>TOUR</li></a>
+                  <a href="./about.html"><li class="active">ABOUT</li></a>
+
+                  <a href="./videos.html"><li>VIDEOS</li></a>
+                  <a href="./albums.html"><li>TRACKS</li></a>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- nav dsk -->
+      <div
+        class="nav-dsk w-screen pb-4 bg-gradient-to-r from-cyan-500 via-blue-500 to-cyan-500"
+      >
+        <nav class="bottom-nav">
+          <div class="max-w-screen-xl px-4 py-3 mx-auto md:px-6">
+            <div class="flex justify-between">
+              <ul class="flex">
+                <a href="./index.html"
+                  ><li><img class="w-24" src="./assets/logo.png" alt="" /></li
+                ></a>
+              </ul>
+
+              <ul
+                class="flex mt-0 space-x-10 text-4xl font-medium items-center font-roboto text-white"
+              >
+                <a href="./index.html"><li>HOME</li></a>
+                <a href="./tour.html"><li>TOUR</li></a>
+                <a href="./about.html"><li>ABOUT</li></a>
+                <a href="./videos.html"><li>VIDEOS</li></a>
+                <a href="./albums.html"><li>TRACKS</li></a>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="content md:mx-20">
+      <div
+        class="title flex justify-center m-10 font-anton text-7xl text-center text-blue-500"
+      >
+        TRACKS
+      </div>
+      <div
+        class="living-room grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 m-5"
+      >
+        <div
+          class="living-room-image w-3/4 align-center flex justify-self-center"
+        >
+          <img src="./assets/living-room.jpeg" alt="" />
+        </div>
+        <div class="living-room text">
+          <h1
+            class="title flex justify-center font-anton text-5xl text-center text-[#8F0F10] m-5"
+          >
+            LIVING ROOM
+          </h1>
+          <h2
+            class="title flex justify-center font-roboto font-extrabold text-3xl text-center text-[#8F0F10]"
+          >
+            2013
+          </h2>
+
+          <div>
+            <ul class="text-center m-5 text-slate-700 font-helvetica">
+              <li>Overture</li>
+              <li>Infinity</li>
+              <li>I'm Ready</li>
+              <li>My Calling</li>
+              <li>Thirsty</li>
+              <li>Pitchfork Kids</li>
+              <li>Woody Allen</li>
+              <li>Livin' On Love</li>
+              <li>Big White Bed</li>
+              <li>The World Is A Marble Heart</li>
+              <li>The Green And The Town</li>
+              <li>Big Idea</li>
+              <li>Growing Old On Bleecker Street</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="the-click grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 m-5">
+        <div
+          class="the-click-image w-3/4 self-center flex justify-self-center aspect-square"
+        >
+          <img src="./assets/the-click.png" alt="the-click" />
+        </div>
+        <div class="the-click text">
+          <h1
+            class="title flex justify-center font-anton text-5xl text-center text-[#DB9863] m-5"
+          >
+            THE CLICK
+          </h1>
+          <h2
+            class="title flex justify-center font-roboto font-extrabold text-3xl text-center text-[#DB9863]"
+          >
+            2015
+          </h2>
+
+          <div>
+            <ul class="text-center m-5 text-slate-700 font-helvetica">
+              <li>Overture (The Click)</li>
+              <li>The Good Part</li>
+              <li>Weak</li>
+              <li>Sober Up (Ft. Rivers Cuomo)</li>
+              <li>Drama</li>
+              <li>Turning Out</li>
+              <li>No Grass Today</li>
+              <li>Three-Thirty</li>
+              <li>Call My Dad</li>
+              <li>I'm Not Famous</li>
+              <li>Netflix Trip</li>
+              <li>Bud Like You</li>
+              <li>Come Hang Out</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="the-click-delx grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 m-5"
+      >
+        <div
+          class="the-click-delx-image w-3/4 flex self-center justify-self-center aspect-square"
+        >
+          <img src="./assets/the-click-delx.jpg" alt="" />
+        </div>
+        <div class="the-click-delx text">
+          <h1
+            class="title flex justify-center font-anton text-5xl text-center text-[#792A99] m-5"
+          >
+            THE CLICK <br />
+            (DELUXE EDITION)
+          </h1>
+          <h2
+            class="title flex justify-center font-roboto font-extrabold text-3xl text-center text-[#792A99]"
+          >
+            2018
+          </h2>
+
+          <div>
+            <ul class="text-center m-5 text-slate-700 font-helvetica">
+              <li>Overture (The Click)</li>
+              <li>The Good Part</li>
+              <li>Weak</li>
+              <li>Sober Up (Ft. Rivers Cuomo)</li>
+              <li>Drama</li>
+              <li>Turning Out</li>
+              <li>No Grass Today</li>
+              <li>Three-Thirty</li>
+              <li>Call My Dad</li>
+              <li>I'm Not Famous</li>
+              <li>Netflix Trip</li>
+              <li>Bud Like You</li>
+              <li>Come Hang Out</li>
+              <li>Burn The House Down</li>
+              <li>Role Models</li>
+              <li>Normal</li>
+              <li>Pretender (Acoustic)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="neo-theter grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 m-5"
+      >
+        <div
+          class="neo-theter-image w-3/4 self-center flex justify-self-center aspect-square"
+        >
+          <img src="./assets/neotheter-album.jpeg" alt="" />
+        </div>
+        <div class="neo-theter text">
+          <h1
+            class="title flex justify-center font-anton text-5xl text-center text-[#2F5C88] m-5"
+          >
+            NEO THEATER
+          </h1>
+          <h2
+            class="title flex justify-center font-roboto font-extrabold text-3xl text-center text-[#2F5C88]"
+          >
+            2019
+          </h2>
+
+          <div>
+            <ul class="text-center m-5 text-slate-700 font-helvetica">
+              <li>Next Up Forever</li>
+              <li>Birthday Party</li>
+              <li>100 Bad Days</li>
+              <li>Don't Throw Out My Legos</li>
+              <li>Break My Face</li>
+              <li>Turning Out Pt. ii s</li>
+              <li>The Entertainment's Here</li>
+              <li>Karma</li>
+              <li>Beats</li>
+              <li>Wow, I'm Not Crazy</li>
+              <li>Dear Winter</li>
+              <li>Finale (Can't Wait to See What You Do Next)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="ok grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 m-5">
+        <div
+          class="ok-image w-3/4 self-center flex justify-self-center aspect-square"
+        >
+          <img src="./assets/okay-orchestra.png" alt="" />
+        </div>
+        <div class="ok text">
+          <h1
+            class="title flex justify-center font-anton text-5xl text-center text-[#F04E39] m-5"
+          >
+            OK ORCHESTRA
+          </h1>
+          <h2
+            class="title flex justify-center font-roboto font-extrabold text-3xl text-center text-[#F04E39]"
+          >
+            2021
+          </h2>
+
+          <div>
+            <ul class="text-center m-5 text-slate-700 font-helvetica">
+              <li>OK Overture</li>
+              <li>Bummerland</li>
+              <li>3 O'Clock Things</li>
+              <li>My Play</li>
+              <li>Joe</li>
+              <li>Adventure Is Out There</li>
+              <li>Bang!</li>
+              <li>The Trick</li>
+              <li>Ordinaryish People (Ft. Blue Man Group)</li>
+              <li>Humpty Dumpty</li>
+              <li>World's Smallest Violin</li>
+              <li>Way Less Sad</li>
+              <li>Christmas in June</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
